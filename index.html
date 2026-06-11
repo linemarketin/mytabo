@@ -9,6 +9,32 @@
     <title>لاين ماركتنج | تسويق إلكتروني، إعلانات جوجل وفيسبوك وإنستجرام بالكويت</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18156309948"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18156309948');
+    </script>
+    
+    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18156309948/fQFMCI2Au70cELybzdFD',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -344,7 +370,6 @@
         <div class="brand-name">لاين ماركتنج</div>
         <div class="tagline">للإعلان والدعاية والتسويق الرقمي</div>
         <h1><span class="highlight">Google Ads | اعلان جوجل | اعلانات جوجل</span> و <span class="highlight">SEO | اعلان اتصال مباشر</span></h1>
-        <!-- النص المطلوب باللون الأبيض -->
         <p>🚀 وكالة رقمية رائدة في الكويت: <strong>برمجة مواقع، تطوير ويب، تحسين محركات البحث SEO، إدارة حملات Google Ads، اعلان نقرة (PPC)، إعلانات فيسبوك وإنستجرام، اعلان اتصال مباشر، وإدارة حسابات المشاهير.</strong> نضمن لك نمواً غير مسبوق ونتائج فورية!</p>
         
         <div class="services">
@@ -366,13 +391,13 @@
         </div>
 
         <div class="buttons">
-            <a href="tel:+96594728014" class="btn phone"><i class="fas fa-phone-alt"></i> اتصل الآن 94728014</a>
-            <a href="tel:+96550553083" class="btn phone"><i class="fas fa-phone-alt"></i> الرقم الثاني 50553083</a>
-            <a href="https://wa.me/+96594728014" class="btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب - خدمة سريعة</a>
-            <a href="https://wa.me/+96550553083" class="btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب الدعم الفني</a>
-            <a href="https://www.instagram.com/line_marketng209" class="btn instagram"><i class="fab fa-instagram"></i> انستجرام - لاين ماركتنج</a>
-            <a href="https://facebook.com/TABO" class="btn facebook"><i class="fab fa-facebook-f"></i> فيسبوك الرسمي</a>
-            <a href="mailto:taponoor@gmail.com" class="btn email"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+            <a href="tel:+96594728014" class="btn phone" onclick="return gtag_report_conversion('tel:+96594728014')"><i class="fas fa-phone-alt"></i> اتصل الآن 94728014</a>
+            <a href="tel:+96550553083" class="btn phone" onclick="return gtag_report_conversion('tel:+96550553083')"><i class="fas fa-phone-alt"></i> الرقم الثاني 50553083</a>
+            <a href="https://wa.me/+96594728014" class="btn whatsapp" onclick="return gtag_report_conversion('https://wa.me/+96594728014')"><i class="fab fa-whatsapp"></i> واتساب - خدمة سريعة</a>
+            <a href="https://wa.me/+96550553083" class="btn whatsapp" onclick="return gtag_report_conversion('https://wa.me/+96550553083')"><i class="fab fa-whatsapp"></i> واتساب الدعم الفني</a>
+            <a href="https://www.instagram.com/line_marketng209" class="btn instagram" onclick="return gtag_report_conversion('https://www.instagram.com/line_marketng209')"><i class="fab fa-instagram"></i> انستجرام - لاين ماركتنج</a>
+            <a href="https://facebook.com/TABO" class="btn facebook" onclick="return gtag_report_conversion('https://facebook.com/TABO')"><i class="fab fa-facebook-f"></i> فيسبوك الرسمي</a>
+            <a href="mailto:taponoor@gmail.com" class="btn email" onclick="return gtag_report_conversion('mailto:taponoor@gmail.com')"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
         </div>
         <div class="contact-info" style="margin-top:22px;">
             <p>📍 خدماتنا تغطي الكويت بالكامل | استشارات تسويقية مجانية | حملات احترافية بعوائد مضمونة</p>
@@ -484,11 +509,26 @@
 
 <!-- الأزرار العائمة الدائرية -->
 <div class="float-buttons">
-    <a href="tel:+96594728014" class="float-btn call-btn" title="اتصال فوري"><i class="fas fa-phone-alt"></i></a>
-    <a href="https://wa.me/+96594728014" class="float-btn whatsapp-float" title="واتساب استشارة سريعة"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+96594728014" class="float-btn call-btn" title="اتصال فوري" onclick="return gtag_report_conversion('tel:+96594728014')"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/+96594728014" class="float-btn whatsapp-float" title="واتساب استشارة سريعة" onclick="return gtag_report_conversion('https://wa.me/+96594728014')"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 <script>
+    // إضافة tracking لتتبع النقرات على الروابط الداخلية في المقالات (اختياري)
+    document.querySelectorAll('.blog-section a, .nav-blog a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            // فقط للروابط الخارجية
+            if (this.href && (this.href.includes('http') || this.href.includes('tel:') || this.href.includes('mailto:'))) {
+                if (!this.hasAttribute('onclick')) {
+                    e.preventDefault();
+                    gtag_report_conversion(this.href);
+                    setTimeout(() => { window.location.href = this.href; }, 500);
+                }
+            }
+        });
+    });
+    
+    // التنقل السلس للأقسام الداخلية
     document.querySelectorAll('.nav-blog a, .footer a[href="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if(this.getAttribute('href') !== '#') {
