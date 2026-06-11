@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="لاين ماركتنج للدعاية والإعلان - شركة تسويق إلكتروني بالكويت تقدم خدمات برمجة المواقع، تحسين محركات البحث SEO، إعلانات جوجل Google Ads، إدارة حملات إعلانات الدفع بالنقرة PPC، إعلانات فيسبوك وإنستجرام، إعلان اتصال مباشر، وإدارة حسابات المشاهير">
+    <meta name="description" content="لاين ماركتنج للدعاية والإعلان - شركة تسويق إلكتروني بالكويت تقدم خدمات برمجة المواقع، تحسين محركات البحث SEO، إعلانات جوجل Google Ads، إدارة حملات إعلانات الدفع بالنقرة PPC، إعلانات فيسبوك وإنستجرام، إعلان اتصال مباشر، وإدارة حسابات المشاهير.">
     <meta name="keywords" content="لاين ماركتنج, تسويق الكتروني الكويت, اعلان جوجل, اعلانات جوجل, اعلان اتصال, اعلان نقرة, برمجة مواقع, SEO, تحسين محركات البحث, Google Ads, اعلانات فيسبوك, اعلانات انستجرام, اعلان اتصال مباشر, PPC">
     <meta name="author" content="لاين ماركتنج للدعاية والاعلان">
-    <meta name="robots" content="index, follow">
     <title>لاين ماركتنج | تسويق إلكتروني، إعلانات جوجل وفيسبوك وإنستجرام بالكويت</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -20,69 +19,75 @@
 
         body {
             background: linear-gradient(135deg, #0a1f3e, #0f2c4f);
-            color: #f0f4fc;
+            color: #ffffff;
             min-height: 100vh;
             padding: 20px;
             scroll-behavior: smooth;
         }
 
-        /* تحسين الأداء وإمكانية الوصول */
-        .main-container {
-            max-width: 1300px;
-            margin: 0 auto;
+        /* توحيد اللون الأبيض لكل النصوص */
+        body, .main-container, .hero, .hero p, .hero .tagline, .hero .contact-info p, 
+        .nav-blog a, .service-badge, .footer, .footer *,
+        .buttons .btn, .contact-info p, .brand-name, h1, .highlight, .tagline {
+            color: #ffffff;
         }
 
-        /* Hero section جديدة بألوان متناسقة */
-        .hero {
-            background: rgba(12, 25, 50, 0.75);
-            backdrop-filter: blur(12px);
-            border-radius: 36px;
-            padding: 40px 30px;
-            text-align: center;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 215, 0, 0.2);
+        /* استثناء: النص داخل المقالات باللون الداكن لسهولة القراءة على خلفية بيضاء */
+        .blog-section, .blog-section p, .blog-section li, .blog-section h2, .blog-section h3, .blog-meta {
+            color: #1f2f3e;
+        }
+        .blog-section h2, .blog-section h3 {
+            color: #0f2c5c;
+        }
+        .blog-meta {
+            color: #6c86a3;
         }
 
-        /* تم حذف اللوجو تمامًا */
         .brand-name {
-            font-size: 2.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #FFE6A3, #FFD966);
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #FFE6A3, #FFD966, #FFB347);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
+            margin-bottom: 10px;
         }
 
         .tagline {
-            font-size: 1.3rem;
+            font-size: 1.35rem;
             margin-bottom: 20px;
-            color: #e0e9ff;
+            font-weight: 500;
         }
 
         h1 {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            font-weight: 700;
+            font-size: 2.3rem;
+            margin-bottom: 18px;
+            font-weight: 800;
         }
 
         .highlight {
             color: #FFD966;
-            font-weight: 800;
+            font-weight: 900;
         }
 
         .hero p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 25px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1.12rem;
+            line-height: 1.75;
+            margin-bottom: 28px;
         }
 
-        /* كلمات مفتاحية محسنة للسيو */
+        /* Hero section */
+        .hero {
+            background: rgba(12, 25, 50, 0.75);
+            backdrop-filter: blur(12px);
+            border-radius: 48px;
+            padding: 45px 30px;
+            text-align: center;
+            margin-bottom: 45px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
         .services {
             display: flex;
             flex-wrap: wrap;
@@ -94,48 +99,46 @@
         .service-badge {
             background: rgba(255, 215, 0, 0.12);
             backdrop-filter: blur(4px);
-            padding: 8px 18px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            transition: all 0.2s;
+            padding: 8px 20px;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            transition: all 0.25s;
+            cursor: default;
         }
 
         .service-badge:hover {
             background: #FFD966;
             color: #0a1f3e;
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
 
         .buttons {
             display: flex;
             flex-direction: column;
             gap: 14px;
-            max-width: 340px;
-            margin: 20px auto 0;
+            max-width: 360px;
+            margin: 25px auto 0;
         }
 
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 14px 20px;
-            border-radius: 60px;
+            padding: 15px 24px;
+            border-radius: 70px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
+            font-weight: 800;
+            font-size: 1.05rem;
             transition: all 0.25s ease;
-            color: white;
             gap: 12px;
-            border: none;
-            cursor: pointer;
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-            filter: brightness(1.03);
+            transform: translateY(-4px);
+            box-shadow: 0 14px 26px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.05);
         }
 
         .whatsapp { background-color: #25D366; }
@@ -144,19 +147,17 @@
         .facebook { background-color: #1877F2; }
         .email { background-color: #EA4335; }
 
-        /* الأزرار العائمة - متوافقة مع الجوال */
+        /* الأزرار العائمة الدائرية */
         .float-buttons {
             position: fixed;
-            bottom: 25px;
-            z-index: 999;
+            bottom: 30px;
+            z-index: 1000;
             display: flex;
-            justify-content: space-between;
-            width: calc(100% - 40px);
-            max-width: 400px;
+            justify-content: center;
+            gap: 28px;
             left: 50%;
             transform: translateX(-50%);
             pointer-events: none;
-            gap: 20px;
         }
 
         .float-btn {
@@ -164,303 +165,343 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background: #1e2f47;
-            backdrop-filter: blur(12px);
-            padding: 12px 22px;
-            border-radius: 60px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #1f344f, #12273f);
+            backdrop-filter: blur(8px);
             color: white;
-            font-weight: bold;
             text-decoration: none;
-            font-size: 1rem;
-            transition: 0.2s;
-            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-            border: 1px solid rgba(255,255,255,0.2);
-            flex: 1;
-            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255,215,0,0.3);
         }
 
         .float-btn.call-btn {
-            background: #1e88e5;
+            background: linear-gradient(145deg, #1e88e5, #0e5fa3);
         }
         .float-btn.whatsapp-float {
-            background: #25D366;
+            background: linear-gradient(145deg, #25D366, #128C7E);
+        }
+        .float-btn:hover {
+            transform: scale(1.12) translateY(-5px);
+            filter: brightness(1.08);
         }
         .float-btn i {
-            font-size: 1.3rem;
+            font-size: 2.2rem;
         }
 
-        /* شريط التنقل بين المقالات */
+        /* شريط التنقل */
         .nav-blog {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 35px;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 14px 18px;
-            border-radius: 70px;
-            backdrop-filter: blur(4px);
+            gap: 12px;
+            margin-bottom: 40px;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 16px 20px;
+            border-radius: 80px;
+            backdrop-filter: blur(8px);
         }
         .nav-blog a {
             background: rgba(255, 255, 255, 0.12);
-            padding: 8px 18px;
-            border-radius: 40px;
+            padding: 10px 22px;
+            border-radius: 50px;
             text-decoration: none;
-            color: #f0f4fc;
-            font-size: 0.8rem;
-            font-weight: 500;
-            transition: 0.2s;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s;
         }
         .nav-blog a:hover {
             background: #FFD966;
             color: #0a1f3e;
+            transform: translateY(-2px);
         }
 
-        /* أقسام المدونة - تحسينات للقراءة و SEO */
+        /* أقسام المدونة */
         .blog-section {
             background: #ffffff;
-            border-radius: 32px;
-            padding: 32px 28px;
-            margin-bottom: 32px;
-            color: #1a2c3e;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-            transition: transform 0.2s;
+            border-radius: 36px;
+            padding: 36px 32px;
+            margin-bottom: 34px;
+            box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.25s;
+            border-bottom: 3px solid #FFD966;
         }
         .blog-section:hover {
-            transform: translateY(-3px);
+            transform: translateY(-5px);
         }
         .blog-section h2 {
-            color: #0f2c5c;
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-            border-right: 6px solid #FFD966;
-            padding-right: 18px;
+            font-size: 1.9rem;
+            margin-bottom: 14px;
+            border-right: 7px solid #FFD966;
+            padding-right: 22px;
+            font-weight: 800;
         }
         .blog-section h3 {
-            color: #1e4a76;
-            margin: 20px 0 12px 0;
-            font-weight: 700;
+            margin: 22px 0 14px 0;
+            font-weight: 800;
+            font-size: 1.35rem;
         }
         .blog-section p {
-            line-height: 1.8;
-            margin-bottom: 16px;
-            color: #2d3e50;
+            line-height: 1.85;
+            margin-bottom: 18px;
+            font-weight: 500;
         }
         .blog-section ul, .blog-section ol {
-            margin: 15px 0;
-            padding-right: 28px;
+            margin: 18px 0;
+            padding-right: 30px;
         }
         .blog-section li {
-            margin-bottom: 8px;
-            line-height: 1.65;
+            margin-bottom: 9px;
+            line-height: 1.7;
+            font-weight: 500;
         }
         .blog-meta {
-            color: #7f8c8d;
-            font-size: 0.85rem;
-            margin-bottom: 18px;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 10px;
+            font-size: 0.9rem;
+            margin-bottom: 22px;
+            border-bottom: 1px solid #e2edf7;
+            padding-bottom: 12px;
+            font-weight: 500;
         }
+
+        /* الفوتر - يحتوي كل الكلمات المفتاحية + العنوان + مواعيد العمل */
         .footer {
             text-align: center;
-            margin-top: 45px;
-            padding: 20px;
-            color: rgba(255,255,240,0.75);
-            font-size: 0.9rem;
+            margin-top: 55px;
+            padding: 30px 20px;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 40px;
+            backdrop-filter: blur(8px);
+            border-top: 1px solid #FFD966;
+            font-size: 0.95rem;
         }
-        /* تحسين الجوال */
+        .keywords-zone {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            padding: 12px;
+            border-top: 1px dashed rgba(255,215,0,0.5);
+            border-bottom: 1px dashed rgba(255,215,0,0.5);
+        }
+        .keywords-zone span {
+            background: rgba(255,215,0,0.15);
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .address-hours {
+            margin: 20px 0 15px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 28px;
+            line-height: 1.8;
+        }
+        .address-hours p {
+            margin: 6px 0;
+            font-size: 0.95rem;
+        }
+        .footer a {
+            color: #FFD966;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        hr {
+            margin: 15px 0;
+            border-color: rgba(255,215,0,0.3);
+        }
+
         @media (max-width: 760px) {
-            body { padding: 12px; }
-            .hero { padding: 25px 18px; }
-            .brand-name { font-size: 2rem; }
-            h1 { font-size: 1.6rem; }
+            body { padding: 14px; }
+            .brand-name { font-size: 2.2rem; }
+            h1 { font-size: 1.65rem; }
             .hero p { font-size: 0.95rem; }
             .service-badge { font-size: 0.7rem; padding: 5px 12px; }
-            .blog-section { padding: 22px 18px; }
-            .blog-section h2 { font-size: 1.4rem; }
-            .nav-blog a { padding: 5px 12px; font-size: 0.7rem; }
-            .float-buttons { gap: 12px; bottom: 20px; width: calc(100% - 30px); }
-            .float-btn { padding: 10px 12px; font-size: 0.85rem; }
-            .float-btn i { font-size: 1.1rem; }
-            .buttons { max-width: 100%; }
+            .blog-section { padding: 24px 20px; }
+            .blog-section h2 { font-size: 1.45rem; }
+            .nav-blog a { padding: 6px 14px; font-size: 0.7rem; }
+            .float-buttons { gap: 20px; bottom: 20px; }
+            .float-btn { width: 60px; height: 60px; }
+            .float-btn i { font-size: 1.8rem; }
         }
-        @media (max-width: 480px) {
-            .float-btn span { display: inline; }
+        @media (max-width: 550px) {
+            .float-buttons { gap: 18px; bottom: 18px; }
+            .float-btn { width: 55px; height: 55px; }
+            .float-btn i { font-size: 1.6rem; }
         }
-        /* تحسين السيو وإمكانية الوصول */
-        strong, b { color: #0f2c5c; }
-        .contact-info p { font-size: 0.9rem; }
-        .fa, .fas, .fab { margin-left: 4px; }
-        hr { opacity: 0.3; margin: 20px 0; }
+        strong, b { font-weight: 800; }
+        .fa, .fas, .fab { margin-left: 6px; }
     </style>
 </head>
 <body>
 <div class="main-container">
 
-    <!-- القسم الرئيسي: لاين ماركتنج (بدون لوجو) -->
     <div class="hero">
         <div class="brand-name">لاين ماركتنج</div>
         <div class="tagline">للإعلان والدعاية والتسويق الرقمي</div>
-        <h1><span class="highlight">Google Ads | إعلانات جوجل | SEO</span> و <span class="highlight">برمجة المواقع</span></h1>
-        <p>نقدم خدمات متكاملة في الكويت: برمجة وتطوير مواقع احترافية، تحسين محركات البحث (SEO)، إدارة وتنفيذ حملات <strong>إعلانات جوجل (Google Ads)</strong>، <strong>إعلانات فيسبوك</strong>، <strong>إعلانات إنستجرام</strong>، <strong>إعلان اتصال مباشر</strong>، <strong>إعلان بالنقرة PPC</strong>، وإدارة حسابات المشاهير والمؤثرين لتحقيق أعلى عائد استثماري.</p>
+        <h1><span class="highlight">Google Ads | اعلان جوجل | اعلانات جوجل</span> و <span class="highlight">SEO | اعلان اتصال مباشر</span></h1>
+        <!-- النص المطلوب باللون الأبيض -->
+        <p>🚀 وكالة رقمية رائدة في الكويت: <strong>برمجة مواقع، تطوير ويب، تحسين محركات البحث SEO، إدارة حملات Google Ads، اعلان نقرة (PPC)، إعلانات فيسبوك وإنستجرام، اعلان اتصال مباشر، وإدارة حسابات المشاهير.</strong> نضمن لك نمواً غير مسبوق ونتائج فورية!</p>
         
-        <!-- كلمات مفتاحية موسعة للسيو + محتوى غني -->
         <div class="services">
-            <div class="service-badge">اعلان جوجل</div>
-            <div class="service-badge">اعلانات جوجل</div>
-            <div class="service-badge">اعلان اتصال</div>
-            <div class="service-badge">اعلان نقرة</div>
-            <div class="service-badge">PPC</div>
-            <div class="service-badge">اعلان اتصال مباشر</div>
-            <div class="service-badge">تصميم مواقع</div>
-            <div class="service-badge">تطوير ويب</div>
-            <div class="service-badge">SEO</div>
-            <div class="service-badge">تحسين محركات البحث</div>
-            <div class="service-badge">إعلانات فيسبوك</div>
-            <div class="service-badge">إعلانات إنستجرام</div>
-            <div class="service-badge">ادارة سوشيال ميديا</div>
-            <div class="service-badge">تسويق رقمي كويت</div>
+            <div class="service-badge">✨ اعلان جوجل</div>
+            <div class="service-badge">📢 اعلانات جوجل</div>
+            <div class="service-badge">📞 اعلان اتصال</div>
+            <div class="service-badge">💰 اعلان نقرة</div>
+            <div class="service-badge">⚡ PPC</div>
+            <div class="service-badge">🎯 اعلان اتصال مباشر</div>
+            <div class="service-badge">🖥️ برمجة مواقع</div>
+            <div class="service-badge">⚙️ تطوير ويب</div>
+            <div class="service-badge">🔍 SEO كويت</div>
+            <div class="service-badge">📈 تحسين محركات</div>
+            <div class="service-badge">📘 اعلانات فيسبوك</div>
+            <div class="service-badge">📸 اعلانات إنستجرام</div>
+            <div class="service-badge">📱 ادارة سوشيال ميديا</div>
+            <div class="service-badge">🏆 تسويق المشاهير</div>
+            <div class="service-badge">🚀 حملات جوجل كويت</div>
         </div>
 
         <div class="buttons">
-            <a href="tel:+96594728014" class="btn phone"><i class="fas fa-phone-alt"></i> اتصل الآن: 94728014</a>
-            <a href="tel:+96550553083" class="btn phone"><i class="fas fa-phone-alt"></i> 50553083</a>
-            <a href="https://wa.me/+96594728014" class="btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب خدمة سريعة</a>
-            <a href="https://wa.me/+96550553083" class="btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب (مدير الحسابات)</a>
-            <a href="https://www.instagram.com/line_marketng209" class="btn instagram"><i class="fab fa-instagram"></i> انستجرام - تابعنا</a>
-            <a href="https://facebook.com/TABO" class="btn facebook"><i class="fab fa-facebook-f"></i> فيسبوك لاين ماركتنج</a>
+            <a href="tel:+96594728014" class="btn phone"><i class="fas fa-phone-alt"></i> اتصل الآن 94728014</a>
+            <a href="tel:+96550553083" class="btn phone"><i class="fas fa-phone-alt"></i> الرقم الثاني 50553083</a>
+            <a href="https://wa.me/+96594728014" class="btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب - خدمة سريعة</a>
+            <a href="https://wa.me/+96550553083" class="btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب الدعم الفني</a>
+            <a href="https://www.instagram.com/line_marketng209" class="btn instagram"><i class="fab fa-instagram"></i> انستجرام - لاين ماركتنج</a>
+            <a href="https://facebook.com/TABO" class="btn facebook"><i class="fab fa-facebook-f"></i> فيسبوك الرسمي</a>
             <a href="mailto:taponoor@gmail.com" class="btn email"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
         </div>
         <div class="contact-info" style="margin-top:22px;">
-            <p>📍 خدمة متكاملة في جميع مناطق الكويت | استشارات مجانية | حملات مضمونة النتائج</p>
+            <p>📍 خدماتنا تغطي الكويت بالكامل | استشارات تسويقية مجانية | حملات احترافية بعوائد مضمونة</p>
         </div>
     </div>
 
-    <!-- روابط سريعة محسنة للمقالات (زيادة keywords) -->
     <div class="nav-blog">
         <a href="#post-design">🖥️ تصميم مواقع</a>
         <a href="#post-dev">⚙️ تطوير ويب</a>
         <a href="#post-google">📢 اعلان جوجل & اعلانات جوجل</a>
-        <a href="#post-seo">🔍 SEO & تحسين محركات</a>
+        <a href="#post-seo">🔍 SEO و تحسين محركات</a>
         <a href="#post-fb">📘 اعلانات فيسبوك</a>
         <a href="#post-ig">📸 اعلانات إنستجرام</a>
         <a href="#post-social">📱 إدارة سوشيال ميديا</a>
-        <a href="#post-cpc">💰 اعلان بالنقرة (PPC)</a>
+        <a href="#post-cpc">💰 اعلان بالنقرة PPC</a>
         <a href="#post-call">📞 اعلان اتصال مباشر</a>
-        <a href="#post-ads">🚀 اعلانات متكاملة</a>
+        <a href="#post-ads">🌟 اعلانات شاملة</a>
     </div>
 
-    <!-- مقالات SEO غنية بالمحتوى والكلمات المطلوبة -->
-
+    <!-- المقالات -->
     <div id="post-design" class="blog-section">
-        <h2>🖥️ تصميم مواقع احترافية وسريعة</h2>
-        <div class="blog-meta">📅 أحدث تقنيات الويب | ⏱️ قراءة: 4 دقائق</div>
-        <p>تصميم موقع إلكتروني جذاب هو أول خطوة لنجاح أعمالك في الكويت. شركة <strong>لاين ماركتنج</strong> تقدم تصميم مواقع متوافقة مع معايير SEO وسرعة فائقة، مما يضمن ظهورك القوي في محركات البحث.</p>
-        <h3>ما الذي يميز تصميمنا؟</h3>
-        <ul><li>تجربة مستخدم فائقة (UX) وواجهات حديثة (UI).</li><li>توافق كامل مع الجوال والأجهزة اللوحية.</li><li>شفرة برمجية نظيفة تدعم تحسين محركات البحث (SEO).</li><li>أزرار حث على الإجراء (CTA) واضحة مثل "اتصل بنا" أو "طلب عرض سعر".</li></ul>
-        <p>أسعار تبدأ من 150 دينار كويتي، مع دعم فني طوال العام. أطلب موقع أحلامك الآن عبر واتساب أو اتصل بفريق لاين ماركتنج.</p>
+        <h2>🖥️ تصميم مواقع احترافية – سرعة وتحسين SEO</h2>
+        <div class="blog-meta">⭐ أحدث تقنيات الويب 2025 | تصميم يجذب العملاء</div>
+        <p>مع <strong>لاين ماركتنج</strong> احصل على موقع إلكتروني حديث، سريع، ومتوافق مع الجوال. نركز على تجربة المستخدم وتهيئة الموقع لمحركات البحث (SEO) منذ اللحظة الأولى.</p>
+        <h3>مزايا تصميمنا :</h3>
+        <ul><li>واجهات جذابة ورسوم متحركة خفيفة.</li><li>هيكلة كود صديقة لجوجل لظهورك في الترتيب الأول.</li><li>أزرار اتصال واضحة وطرق دفع متكاملة.</li></ul>
+        <p>ابدأ بموقع يعكس قوة علامتك التجارية اليوم!</p>
     </div>
 
     <div id="post-dev" class="blog-section">
-        <h2>⚙️ تطوير ويب - قوي وآمن وقابل للتوسع</h2>
-        <div class="blog-meta">📅 لغات حديثة | قراءة ممتعة</div>
-        <p>تطوير الويب هو العمود الفقري لأي منصة إلكترونية. خبراء لاين ماركتنج يستخدمون أحدث الأطر مثل Laravel وReact لتقديم مواقع سريعة وآمنة. نقدم حلولاً للمتاجر الإلكترونية، والبوابات الخدمية، والمواقع التفاعلية.</p>
-        <p>خدماتنا تشمل تطوير الواجهة الأمامية والخلفية، وقواعد البيانات، وأنظمة إدارة المحتوى المخصصة لتناسب احتياجاتك بالكويت.</p>
+        <h2>⚙️ تطوير ويب – حلول متكاملة للمؤسسات</h2>
+        <div class="blog-meta">💻 أنظمة إدارة محتوى وتطبيقات ويب</div>
+        <p>فريقنا يقدم تطوير أنظمة مخصصة، متاجر إلكترونية، وبوابات خدمة عملاء باستخدام أحدث التقنيات. نضمن أمان عالي وأداء فائق.</p>
     </div>
 
     <div id="post-google" class="blog-section">
-        <h2>📢 إعلانات جوجل (Google Ads) – اعلان جوجل احترافي</h2>
-        <div class="blog-meta">🔥 حملات PPC مدروسة | تحقيق أعلى عائد</div>
-        <p><strong>اعلان جوجل</strong> و <strong>اعلانات جوجل</strong> هي أسرع وسيلة لظهور عملك في الصفحات الأولى. نوفر إدارة كاملة لحملات البحث، العرض، والفيديو (يوتيوب) بنظام الدفع مقابل النقرة. نستهدف العملاء في الكويت بكلمات مفتاحية دقيقة مثل "أفضل شركة تسويق"، "اعلان اتصال"، "اعلان نقرة".</p>
-        <h3>أنواع حملاتنا ضمن Google Ads</h3>
-        <ul><li>حملات البحث (Search) بنقرة منافسة منخفضة.</li><li>حملات إعلانات الاتصال المباشر (Call Ads) لجذب المكالمات الهاتفية فوراً.</li><li>حملات إعادة الاستهداف لعرض إعلاناتك على من زار موقعك.</li><li>إعلانات Shopping للمتاجر الإلكترونية.</li></ul>
-        <p>نساعدك على تخفيض تكلفة النقرة وزيادة المبيعات عبر تقارير أسبوعية وتحليل شامل للمنافسين.</p>
+        <h2>📢 اعلان جوجل و اعلانات جوجل – حملات PPC مدروسة</h2>
+        <div class="blog-meta">🔥 إدارة احترافية لـ Google Ads | عائد استثماري عالي</div>
+        <p><strong>اعلان جوجل</strong> هو الحل الأسرع لظهور نشاطك التجاري. ننشئ حملات بحث، شبكة إعلانات، فيديو، وإعلانات اتصال مباشر. نستهدف كلمات مثل <strong>"اعلان نقرة"، "اعلانات جوجل الكويت"</strong>.</p>
     </div>
 
     <div id="post-seo" class="blog-section">
         <h2>🔍 تحسين محركات البحث SEO – تصدر نتائج جوجل</h2>
-        <div class="blog-meta">📈 استراتيجيات 2025 | نتائج مستدامة</div>
-        <p>SEO اختصار لـ Search Engine Optimization، نهتم بتحسين موقعك داخلياً وخارجياً لتحقيق المراكز الأولى مجاناً. نقدم خدمات On-Page (عناوين، وسوم، محتوى) و Off-Page (باك لينكات قوية) وتحليل تقني متقدم.</p>
-        <p><strong>لماذا SEO مع لاين ماركتنج؟</strong> فريقنا خبير في سوق الكويت، نعرف كلمات البحث التي يكتبها عملاؤك، ونحسن سرعة الموقع وهيكلية الروابط. احصل على زوار حقيقيين بشكل دائم دون دفع مقابل كل نقرة.</p>
+        <div class="blog-meta">📈 استراتيجيات سيو 2025</div>
+        <p>نساعدك على الظهور في الصفحة الأولى مجاناً. خدماتنا تشمل تحليل الكلمات المفتاحية، تحسين المحتوى، وبناء روابط قوية.</p>
     </div>
 
     <div id="post-fb" class="blog-section">
-        <h2>📘 إعلانات فيسبوك – استهداف فائق الدقة</h2>
-        <div class="blog-meta">🎯 أكثر من 2 مليون مستخدم في الكويت مستهدفين</div>
-        <p>إعلانات فيسبوك تتيح لك بناء جمهورك المثالي حسب العمر، الاهتمامات، الموقع الجغرافي، وحتى السلوك الشرائي. نحن في لاين ماركتنج ندير حملات فيسبوك إعلانية تولد عملاء محتملين (Leads) ومبيعات فورية، مع تصميم إعلانات جذابة (صور وفيديو وكاروسيل).</p>
-        <p>اختر أهدافك: زيادة الوعي، تفاعل، مراسلة، أو مبيعات. تقارير مفصلة وإدارة يومية لميزانيتك.</p>
+        <h2>📘 اعلانات فيسبوك – استهداف دقيق</h2>
+        <div class="blog-meta">🎯 حملات ممولة بنتائج فورية</div>
+        <p>نصمم حملات فيسبوك إعلانية لزيادة الوعي وجذب العملاء المحتملين وتحقيق مبيعات.</p>
     </div>
 
     <div id="post-ig" class="blog-section">
-        <h2>📸 إعلانات إنستجرام – جاذبية بصرية للمشاهير والمشاريع</h2>
-        <div class="blog-meta">🎬 Reels, Stories, Shop</div>
-        <p>انستجرام هو المنصة الأولى للتسويق بالصور والفيديو في الكويت. نقدم إعلانات إنستجرام ممولة عبر Meta Ads Manager، تستهدف الشباب والكبار بكل دقة. يمكننا الترويج لحسابات المشاهير والمؤثرين لزيادة التفاعل والمتابعين الحقيقيين، بالإضافة إلى إدارة إعلانات متجر انستجرام.</p>
-        <p>استفد من قصص تفاعلية، وإعلانات ريلز تنتشر بسرعة، وارفع مبيعاتك مع فريق إبداعي.</p>
+        <h2>📸 اعلانات إنستجرام – قوة البصريات</h2>
+        <div class="blog-meta">🔥 قصص، ريلز، إعلانات تسوق</div>
+        <p>ندير حملات إعلانية ممولة على إنستجرام تجذب متابعين حقيقيين وزيارات للمتجر.</p>
     </div>
 
     <div id="post-social" class="blog-section">
-        <h2>📱 إدارة سوشيال ميديا – بناء علامة تجارية قوية</h2>
-        <div class="blog-meta">📆 محتوى احترافي 24/7</div>
-        <p>إدارة متكاملة لمنصات التواصل: فيسبوك، إنستجرام، تويتر، لينكد إن، تيك توك. نقدم خطة محتوى شهرية، تصميم جرافيك، كتابة كوبي، والرد على العملاء، وقياس الأداء. نضمن لك تفاعلًا عاليًا ونموًا في المتابعين العضويين. خدماتنا تشمل إدارة حسابات المشاهير لزيادة العقود والرعايات.</p>
+        <h2>📱 إدارة سوشيال ميديا – نمو وتفاعل</h2>
+        <div class="blog-meta">📆 محتوى إبداعي وجدولة يومية</div>
+        <p>إدارة كاملة لحساباتك على فيسبوك، إنستجرام، تيك توك. خطط محتوى شهرية ورد على الاستفسارات.</p>
     </div>
 
     <div id="post-cpc" class="blog-section">
-        <h2>💰 إعلان بالنقرة (PPC) – ادفع فقط عند النقر الفعلي</h2>
-        <div class="blog-meta">💵 تحقيق عائد حقيقي من أول يوم</div>
-        <p>إعلانات الدفع مقابل النقرة (PPC) تمنحك تحكمًا كاملاً في التكلفة. سواء أردت إعلان جوجل أو إعلانات فيسبوك، فنحن نصمم حملات تجذب الزيارات المؤهلة بتكلفة منخفضة. نركز على الكلمات المفتاحية ذات النية الشرائية العالية مثل "اعلان اتصال"، "شراء اعلانات جوجل"، و"اعلان نقرة منافس".</p>
-        <p>أطلق حملتك اليوم وسيظهر إعلانك فوراً للجمهور المستهدف. تقارير تحليلية ومراقبة يومية.</p>
+        <h2>💰 اعلان بالنقرة PPC – ادفع للنتائج فقط</h2>
+        <div class="blog-meta">📊 تحكم كامل بالميزانية</div>
+        <p>إعلانات الدفع مقابل النقرة تشمل Google Ads وإعلانات فيسبوك. نختار كلمات مفتاحية عالية التحويل.</p>
     </div>
 
     <div id="post-call" class="blog-section">
-        <h2>📞 اعلان اتصال مباشر (Call Ads) – عملاء يتصلون بك بنقرة</h2>
-        <div class="blog-meta">📱 حل مثالي لخدمات الطوارئ والمحلات التجارية</div>
-        <p>إعلانات الاتصال المباشر هي أكثر ما يبحث عنه أصحاب المطاعم، العيادات، شركات الصيانة، والمقاولات في الكويت. نعتمد على استهداف جغرافي دقيق مع كلمات مثل "سباك الكويت"، "دكتور أسنان حولي"، "تسويق عاجل"، ويظهر إعلانك مع زر "اتصل الآن" مباشرة. أنت لا تدفع إلا مقابل المكالمات الواردة أو النقرات بأسعار مميزة.</p>
-        <p>فريق لاين ماركتنج يُحسن حملات إعلان الاتصال لتحصل على أقصى عدد من العملاء المتصلين يومياً.</p>
+        <h2>📞 اعلان اتصال مباشر – عملاء يتصلون بك فوراً</h2>
+        <div class="blog-meta">📱 حل مثالي للمطاعم، الصيانة، والعيادات</div>
+        <p><strong>اعلان اتصال</strong> و <strong>اعلان اتصال مباشر</strong> هما أقوى طرق جذب العملاء بالكويت. حملات Call Ads عبر جوجل وفيسبوك.</p>
     </div>
 
     <div id="post-ads" class="blog-section">
-        <h2>🚀 اعلانات رقمية شاملة – Google, Meta, TikTok</h2>
-        <div class="blog-meta">🌍 حلول متعددة القنوات</div>
-        <p>نحن نؤمن بأن الإعلانات الرقمية المتكاملة تحقق أقصى انتشار. نقدم حلولاً تشمل إعلانات جوجل، إعلانات فيسبوك وإنستجرام، إعلانات تيك توك، وإعلانات لينكد إن (B2B). بالإضافة إلى إعادة الاستهداف والبانرات الإعلانية. نبدأ باستشارة مجانية ونحدد المزيج الإعلاني الأنسب لمجال عملك بالكويت.</p>
-        <p>مع لاين ماركتنج، ستحصل على حملات ربحية، وتحسين مستمر للـ ROI، وتقارير شفافة.</p>
-        <p><strong>كلمات بحثنا المستهدفة:</strong> اعلان جوجل، اعلانات جوجل، اعلان اتصال، اعلان نقرة، PPC، تسويق إلكتروني بالكويت، برمجة مواقع، تصميم تطبيقات، تحسين محركات بحث، اعلانات جوجل كويت، إعلانات فيسبوك، إدارة حملات تسويقية.</p>
+        <h2>🌟 اعلانات رقمية شاملة – تسويق متكامل</h2>
+        <div class="blog-meta">🚀 Google, Meta, TikTok</div>
+        <p>جميع خدمات الإعلان تحت سقف واحد: اعلان جوجل، اعلانات جوجل، اعلانات فيسبوك، انستجرام، تيك توك، اعلان نقرة، اعلان اتصال مباشر، برمجة مواقع.</p>
     </div>
 
-    <!-- نهاية المقالات -->
+    <!-- footer يحتوي على كل الكلمات المفتاحية + العنوان + مواعيد العمل -->
     <div class="footer">
-        &copy; <span id="year"></span> <strong>لاين ماركتنج للدعاية والاعلان</strong> - جميع الحقوق محفوظة | برمجة مواقع وإعلانات رقمية في الكويت<br>
-        <div style="margin-top: 12px;">
-            <a href="#" style="color:#FFD966; text-decoration:none; font-weight:500;">▲ العودة إلى الأعلى</a>
+        <!-- كل الكلمات المفتاحية المنقولة مع اخواتها في الزيل -->
+        <div class="keywords-zone">
+            <span>✨ اعلان جوجل</span> <span>📢 اعلانات جوجل</span> <span>📞 اعلان اتصال</span> <span>💰 اعلان نقرة</span>
+            <span>⚡ PPC</span> <span>🎯 اعلان اتصال مباشر</span> <span>🖥️ برمجة مواقع</span> <span>⚙️ تطوير ويب</span>
+            <span>🔍 SEO كويت</span> <span>📈 تحسين محركات</span> <span>📘 اعلانات فيسبوك</span> <span>📸 اعلانات إنستجرام</span>
+            <span>📱 ادارة سوشيال ميديا</span> <span>🏆 تسويق المشاهير</span> <span>🚀 حملات جوجل كويت</span>
+        </div>
+
+        <!-- العنوان ومواعيد العمل الجديدة -->
+        <div class="address-hours">
+            <p><i class="fas fa-map-marker-alt"></i> <strong>العنوان:</strong> حولي - شارع تونس - مجمع الفضالة التجاري - دور ميزانين 1 - مكتب 8</p>
+            <p><i class="fas fa-clock"></i> <strong>مواعيد العمل:</strong> من 1 ظهراً إلى 9 مساءً (من الأحد إلى الخميس)</p>
+        </div>
+
+        <div style="margin: 10px 0;">
+            &copy; 2026 لاين ماركتنج للدعاية والاعلان - جميع الحقوق محفوظة | حلول متكاملة للتسويق الرقمي في الكويت: اعلان جوجل، اعلانات جوجل، اعلان اتصال، اعلان نقرة، SEO، برمجة مواقع.
+        </div>
+        
+        <div style="margin-top: 15px;">
+            <a href="#"><i class="fas fa-arrow-up"></i> العودة للأعلى</a>
         </div>
     </div>
 </div>
 
-<!-- الأزرار العائمة (يمين اتصال - يسار واتساب) بشكل متناسق مع الجوال -->
+<!-- الأزرار العائمة الدائرية -->
 <div class="float-buttons">
-    <a href="tel:+96594728014" class="float-btn call-btn"><i class="fas fa-phone-alt"></i> <span>اتصال فوري</span></a>
-    <a href="https://wa.me/+96594728014" class="float-btn whatsapp-float"><i class="fab fa-whatsapp"></i> <span>واتساب</span></a>
+    <a href="tel:+96594728014" class="float-btn call-btn" title="اتصال فوري"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/+96594728014" class="float-btn whatsapp-float" title="واتساب استشارة سريعة"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // إضافة سلاسة للتنقل الداخلي للأقسام
     document.querySelectorAll('.nav-blog a, .footer a[href="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if(this.getAttribute('href') !== '#') {
                 e.preventDefault();
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElem = document.getElementById(targetId);
-                if(targetElem) {
-                    targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if(targetElem) targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
             } else {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
     });
-    // تحسين بسيط للتأكد من عدم وجود أخطاء
 </script>
 </body>
 </html>
